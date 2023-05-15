@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Calculator">
+
+    <TextView
+        android:id="@+id/num1_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserrat"
+        android:labelFor="@+id/num1_edit_text"
+        android:text="@string/input_first"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/num1_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:ems="12"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/operation_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserrat"
+        android:labelFor="@+id/operation_edit_text"
+        android:text="@string/input_operation"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/operation_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:ems="12"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/num2_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/montserrat"
+        android:labelFor="@+id/num2_edit_text"
+        android:text="@string/input_second"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/num2_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:ems="12"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculate_result_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/name_of_app"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/calculate"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/result"
+        android:textSize="20sp" />
+
+</LinearLayout>
